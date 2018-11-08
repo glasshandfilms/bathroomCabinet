@@ -1,0 +1,99 @@
+fileFormatVersion: 2
+guid: fd2e236b7b41a4a46a43f77f0f885d81
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: plaster_float/plaster_float
+    400000: plaster_float/plaster_float/Transform
+    2100000: mat.Float Plaster
+    2300000: plaster_float/plaster_float/MeshRenderer
+    2800000: Float Plaster_Base Color
+    2800002: Float Plaster_Normal
+    2800004: Float Plaster_Metallic
+    2800006: Float Plaster_Height
+    3300000: plaster_float/plaster_float/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: plaster_float/plaster_float/SphereCollider
+    100100000: plaster_float
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  mGraphInstanceData:
+  - graphLabel: Float Plaster
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://plaster_float\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"872958913\" type=\"8\" value=\"10,10\" />\n
+      \ <presetinput identifier=\"pattern_intensity\" uid=\"1168865871\" type=\"0\"
+      value=\"0.327\" />\n  <presetinput identifier=\"plaster_roughness\" uid=\"1168860384\"
+      type=\"0\" value=\"0.202\" />\n  <presetinput identifier=\"luminosity\" uid=\"827650682\"
+      type=\"0\" value=\"0.531\" />\n  <presetinput identifier=\"normal_intensity\"
+      uid=\"827657499\" type=\"0\" value=\"0.135\" />\n  <presetinput identifier=\"height_range\"
+      uid=\"1232404794\" type=\"0\" value=\"1\" />\n  <presetinput identifier=\"height_position\"
+      uid=\"1232404811\" type=\"0\" value=\"0.429\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Height
+    texturePackingList:
+    - outputName: Diffuse
+      alphaSource: Diffuse
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Specular
+      alphaSource: Specular
+    - outputName: Glossiness
+      alphaSource: Glossiness
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Diffuse
+      bLinear: 0
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Specular
+      bLinear: 0
+    - outputName: Glossiness
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 1
+      textureWidth: 1024
+      textureHeight: 1024
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100000, guid: fd2e236b7b41a4a46a43f77f0f885d81, type: 3}

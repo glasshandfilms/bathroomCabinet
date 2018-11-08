@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: c0050e8a2bd70a04286b3c900b86027a
+ScriptedImporter:
+  fileIDToRecycleName:
+    100002: Product_plastic_base/Product_plastic_base
+    400002: Product_plastic_base/Product_plastic_base/Transform
+    2100000: 'mat.Base Plastic '
+    2100002: mat.Base Plastic _1
+    2300002: Product_plastic_base/Product_plastic_base/MeshRenderer
+    2800000: Base Plastic _Base Color
+    2800002: Base Plastic _Normal
+    2800004: Base Plastic _Metallic
+    2800006: Base Plastic _Height
+    2800008: Base Plastic _1_Base Color
+    2800010: Base Plastic _1_Normal
+    2800012: Base Plastic _1_Metallic
+    2800014: Base Plastic _1_Height
+    3300002: Product_plastic_base/Product_plastic_base/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    11400004: graph1
+    13500002: Product_plastic_base/Product_plastic_base/SphereCollider
+    100100002: Product_plastic_base
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  mGraphInstanceData:
+  - graphLabel: 'Base Plastic '
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://plastic_base\" label=\"\" >\n  <presetinput
+      identifier=\"color\" uid=\"701807232\" type=\"2\" value=\"0.333333,0.329412,0.34902\"
+      />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Height
+    texturePackingList:
+    - outputName: Diffuse
+      alphaSource: Diffuse
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Specular
+      alphaSource: Specular
+    - outputName: Glossiness
+      alphaSource: Glossiness
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Diffuse
+      bLinear: 0
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Specular
+      bLinear: 0
+    - outputName: Glossiness
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100000, guid: c0050e8a2bd70a04286b3c900b86027a, type: 3}
+  - graphLabel: Base Plastic _1
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://plastic_base\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"1481498001\" type=\"8\" value=\"9,9\" />\n
+      \ <presetinput identifier=\"color\" uid=\"701807232\" type=\"2\" value=\"0.897156,0.908642,0.923\"
+      />\n  <presetinput identifier=\"plastic_roughness\" uid=\"701119849\" type=\"0\"
+      value=\"0.093\" />\n  <presetinput identifier=\"luminosity\" uid=\"1561420842\"
+      type=\"0\" value=\"0.52\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Height
+    texturePackingList:
+    - outputName: Diffuse
+      alphaSource: Diffuse
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Specular
+      alphaSource: Specular
+    - outputName: Glossiness
+      alphaSource: Glossiness
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Diffuse
+      bLinear: 0
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Specular
+      bLinear: 0
+    - outputName: Glossiness
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100002, guid: c0050e8a2bd70a04286b3c900b86027a, type: 3}

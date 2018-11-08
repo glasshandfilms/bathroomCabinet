@@ -1,0 +1,110 @@
+fileFormatVersion: 2
+guid: 98b5bf92f21f3084682daa8d83959c93
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: glass_rain/glass_rain
+    400000: glass_rain/glass_rain/Transform
+    2100000: mat.Glass Rain
+    2300000: glass_rain/glass_rain/MeshRenderer
+    2800000: Glass Rain_Base Color
+    2800002: Glass Rain_Normal
+    2800004: Glass Rain_Metallic
+    2800006: Glass Rain_Height
+    3300000: glass_rain/glass_rain/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: glass_rain/glass_rain/SphereCollider
+    100100000: glass_rain
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  mGraphInstanceData:
+  - graphLabel: Glass Rain
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://glass_rain\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"3615049222\" type=\"8\" value=\"9,9\" />\n
+      \ <presetinput identifier=\"height_range\" uid=\"2852392189\" type=\"0\" value=\"1\"
+      />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Height
+    texturePackingList:
+    - outputName: Diffuse
+      alphaSource: Diffuse
+    - outputName: Base Color
+      alphaSource: Opacity
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Specular
+      alphaSource: Specular
+    - outputName: Glossiness
+      alphaSource: Glossiness
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Smoothness
+    - outputName: Height
+      alphaSource: Height
+    - outputName: Refraction
+      alphaSource: Refraction
+    - outputName: Refraction Glossiness
+      alphaSource: Refraction Glossiness
+    - outputName: Inverted IOR
+      alphaSource: Inverted IOR
+    - outputName: Opacity
+      alphaSource: Opacity
+    colorSpaceList:
+    - outputName: Diffuse
+      bLinear: 0
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Specular
+      bLinear: 0
+    - outputName: Glossiness
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    - outputName: Refraction
+      bLinear: 1
+    - outputName: Refraction Glossiness
+      bLinear: 1
+    - outputName: Inverted IOR
+      bLinear: 1
+    - outputName: Opacity
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100000, guid: 98b5bf92f21f3084682daa8d83959c93, type: 3}

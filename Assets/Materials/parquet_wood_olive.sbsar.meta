@@ -1,0 +1,107 @@
+fileFormatVersion: 2
+guid: 86232aa103516fe4bb1666659b7abdc1
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: parquet_wood_olive/parquet_wood_olive
+    400000: parquet_wood_olive/parquet_wood_olive/Transform
+    2100000: mat.Parquet Olive
+    2300000: parquet_wood_olive/parquet_wood_olive/MeshRenderer
+    2800000: Parquet Olive_Base Color
+    2800002: Parquet Olive_Normal
+    2800004: Parquet Olive_Metallic
+    2800006: Parquet Olive_Height
+    3300000: parquet_wood_olive/parquet_wood_olive/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: parquet_wood_olive/parquet_wood_olive/SphereCollider
+    100100000: parquet_wood_olive
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  mGraphInstanceData:
+  - graphLabel: Parquet Olive
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://parquet_wood_olive\" label=\"\" >\n  <presetinput
+      identifier=\"$outputsize\" uid=\"1756499044\" type=\"8\" value=\"11,11\" />\n
+      \ <presetinput identifier=\"english_pattern_offset\" uid=\"433837046\" type=\"0\"
+      value=\"0.215\" />\n  <presetinput identifier=\"bevel_instensity\" uid=\"433847191\"
+      type=\"0\" value=\"0.14\" />\n  <presetinput identifier=\"bevel_x_distance\"
+      uid=\"433847270\" type=\"0\" value=\"0.062\" />\n  <presetinput identifier=\"bevel_y_distance\"
+      uid=\"433847281\" type=\"0\" value=\"0.076\" />\n  <presetinput identifier=\"color\"
+      uid=\"430032587\" type=\"2\" value=\"0.825,0.677738,0.530475\" />\n  <presetinput
+      identifier=\"planks_contrast\" uid=\"430423176\" type=\"0\" value=\"0.394\"
+      />\n  <presetinput identifier=\"wood_roughness\" uid=\"429961114\" type=\"0\"
+      value=\"0.102\" />\n  <presetinput identifier=\"finish_type\" uid=\"429964343\"
+      type=\"4\" value=\"3\" />\n  <presetinput identifier=\"metallic\" uid=\"349449438\"
+      type=\"4\" value=\"0\" />\n  <presetinput identifier=\"luminosity\" uid=\"1844360671\"
+      type=\"0\" value=\"0.513\" />\n  <presetinput identifier=\"contrast\" uid=\"309034237\"
+      type=\"0\" value=\"-0.072\" />\n  <presetinput identifier=\"normal_intensity\"
+      uid=\"1844398782\" type=\"0\" value=\"1\" />\n  <presetinput identifier=\"height_range\"
+      uid=\"365905567\" type=\"0\" value=\"1\" />\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: Base Color,Normal,Metallic,Height
+    texturePackingList:
+    - outputName: Diffuse
+      alphaSource: Diffuse
+    - outputName: Base Color
+      alphaSource: Base Color
+    - outputName: Normal
+      alphaSource: Normal
+    - outputName: Specular
+      alphaSource: Specular
+    - outputName: Glossiness
+      alphaSource: Glossiness
+    - outputName: Roughness
+      alphaSource: Roughness
+    - outputName: Metallic
+      alphaSource: Metallic
+    - outputName: Height
+      alphaSource: Height
+    colorSpaceList:
+    - outputName: Diffuse
+      bLinear: 0
+    - outputName: Base Color
+      bLinear: 0
+    - outputName: Normal
+      bLinear: 1
+    - outputName: Specular
+      bLinear: 0
+    - outputName: Glossiness
+      bLinear: 1
+    - outputName: Roughness
+      bLinear: 1
+    - outputName: Metallic
+      bLinear: 1
+    - outputName: Height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: Default
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 1
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      loadBehavior: 0
+    - label: Standalone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    - label: iPhone
+      bOverride: 0
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 256
+      textureHeight: 256
+      textureFormat: 0
+      loadBehavior: 0
+    material: {fileID: 2100000, guid: 86232aa103516fe4bb1666659b7abdc1, type: 3}
