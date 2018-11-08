@@ -6,10 +6,14 @@ ScriptedImporter:
     400000: parquet_wood_olive/parquet_wood_olive/Transform
     2100000: mat.Parquet Olive
     2300000: parquet_wood_olive/parquet_wood_olive/MeshRenderer
-    2800000: Parquet Olive_Base Color
-    2800002: Parquet Olive_Normal
-    2800004: Parquet Olive_Metallic
-    2800006: Parquet Olive_Height
+    2800000: Parquet Olive_baseColor
+    2800002: Parquet Olive_normal
+    2800004: Parquet Olive_metallic
+    2800006: Parquet Olive_height
+    2800008: Parquet Olive_diffuse
+    2800010: Parquet Olive_specular
+    2800012: Parquet Olive_glossiness
+    2800014: Parquet Olive_roughness
     3300000: parquet_wood_olive/parquet_wood_olive/MeshFilter
     11400000: sbsar
     11400002: graph0
@@ -20,88 +24,93 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
   mGraphInstanceData:
   - graphLabel: Parquet Olive
+    prototypeName: Parquet Olive
     graphDescIndex: 0
-    generateAllOutputs: 0
+    generateAllOutputs: 1
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://parquet_wood_olive\" label=\"\" >\n  <presetinput
       identifier=\"$outputsize\" uid=\"1756499044\" type=\"8\" value=\"11,11\" />\n
-      \ <presetinput identifier=\"english_pattern_offset\" uid=\"433837046\" type=\"0\"
-      value=\"0.215\" />\n  <presetinput identifier=\"bevel_instensity\" uid=\"433847191\"
-      type=\"0\" value=\"0.14\" />\n  <presetinput identifier=\"bevel_x_distance\"
-      uid=\"433847270\" type=\"0\" value=\"0.062\" />\n  <presetinput identifier=\"bevel_y_distance\"
-      uid=\"433847281\" type=\"0\" value=\"0.076\" />\n  <presetinput identifier=\"color\"
-      uid=\"430032587\" type=\"2\" value=\"0.825,0.677738,0.530475\" />\n  <presetinput
-      identifier=\"planks_contrast\" uid=\"430423176\" type=\"0\" value=\"0.394\"
-      />\n  <presetinput identifier=\"wood_roughness\" uid=\"429961114\" type=\"0\"
-      value=\"0.102\" />\n  <presetinput identifier=\"finish_type\" uid=\"429964343\"
-      type=\"4\" value=\"3\" />\n  <presetinput identifier=\"metallic\" uid=\"349449438\"
-      type=\"4\" value=\"0\" />\n  <presetinput identifier=\"luminosity\" uid=\"1844360671\"
-      type=\"0\" value=\"0.513\" />\n  <presetinput identifier=\"contrast\" uid=\"309034237\"
-      type=\"0\" value=\"-0.072\" />\n  <presetinput identifier=\"normal_intensity\"
-      uid=\"1844398782\" type=\"0\" value=\"1\" />\n  <presetinput identifier=\"height_range\"
-      uid=\"365905567\" type=\"0\" value=\"1\" />\n </sbspreset>\n"
-    shaderName: Standard
-    outputNames: Base Color,Normal,Metallic,Height
+      </sbspreset>\n"
+    shaderName: LightweightPipeline/Standard (Physically Based)
+    outputNames: diffuse,normal,specular,metallic,height
     texturePackingList:
-    - outputName: Diffuse
-      alphaSource: Diffuse
-    - outputName: Base Color
-      alphaSource: Base Color
-    - outputName: Normal
-      alphaSource: Normal
-    - outputName: Specular
-      alphaSource: Specular
-    - outputName: Glossiness
-      alphaSource: Glossiness
-    - outputName: Roughness
-      alphaSource: Roughness
-    - outputName: Metallic
-      alphaSource: Metallic
-    - outputName: Height
-      alphaSource: Height
+    - outputName: diffuse
+      alphaSource: diffuse
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: specular
+      alphaSource: specular
+    - outputName: glossiness
+      alphaSource: glossiness
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: metallic
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Parquet Olive_glossiness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Olive_diffuse
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Olive_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Olive_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Olive_specular
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Olive_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Olive_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Parquet Olive_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
     colorSpaceList:
-    - outputName: Diffuse
+    - outputName: diffuse
       bLinear: 0
-    - outputName: Base Color
+    - outputName: baseColor
       bLinear: 0
-    - outputName: Normal
+    - outputName: normal
       bLinear: 1
-    - outputName: Specular
+    - outputName: specular
       bLinear: 0
-    - outputName: Glossiness
+    - outputName: glossiness
       bLinear: 1
-    - outputName: Roughness
+    - outputName: roughness
       bLinear: 1
-    - outputName: Metallic
+    - outputName: metallic
       bLinear: 1
-    - outputName: Height
+    - outputName: height
       bLinear: 1
     inputTextureMap: []
     targetSettingList:
-    - label: Default
-      bOverride: 0
+    - label: 
       bLockRatio: 1
-      bHighQuality: 1
+      bHighQuality: 0
       textureWidth: 2048
       textureHeight: 2048
-      textureFormat: 0
-      loadBehavior: 0
-    - label: Standalone
-      bOverride: 0
-      bLockRatio: 1
-      bHighQuality: 0
-      textureWidth: 256
-      textureHeight: 256
-      textureFormat: 0
-      loadBehavior: 0
-    - label: iPhone
-      bOverride: 0
-      bLockRatio: 1
-      bHighQuality: 0
-      textureWidth: 256
-      textureHeight: 256
-      textureFormat: 0
-      loadBehavior: 0
+      textureFormat: 2
+      bGenerateOnLoad: 1
     material: {fileID: 2100000, guid: 86232aa103516fe4bb1666659b7abdc1, type: 3}
+    generatedTextures: []
