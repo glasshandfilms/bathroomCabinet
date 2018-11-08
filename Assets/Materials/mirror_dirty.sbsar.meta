@@ -31,10 +31,9 @@ ScriptedImporter:
     preset: " <sbspreset pkgurl=\"pkg://mirror_dirty\" label=\"\" >\n  <presetinput
       identifier=\"$outputsize\" uid=\"321865921\" type=\"8\" value=\"10,10\" />\n
       \ <presetinput identifier=\"cracks\" uid=\"1692384921\" type=\"4\" value=\"0\"
-      />\n  <presetinput identifier=\"channel_diffuse\" uid=\"1642352735\" type=\"4\"
-      value=\"1\" />\n  <presetinput identifier=\"channel_basecolor\" uid=\"1867081845\"
-      type=\"4\" value=\"0\" />\n  <presetinput identifier=\"luminosity\" uid=\"376697210\"
-      type=\"0\" value=\"1\" />\n  <presetinput identifier=\"normal_intensity\" uid=\"376573467\"
+      />\n  <presetinput identifier=\"channel_basecolor\" uid=\"1867081845\" type=\"4\"
+      value=\"0\" />\n  <presetinput identifier=\"luminosity\" uid=\"376697210\" type=\"0\"
+      value=\"1\" />\n  <presetinput identifier=\"normal_intensity\" uid=\"376573467\"
       type=\"0\" value=\"1\" />\n  <presetinput identifier=\"height_range\" uid=\"1850868282\"
       type=\"0\" value=\"1\" />\n </sbspreset>\n"
     shaderName: LightweightPipeline/Standard (Physically Based)
@@ -114,11 +113,6 @@ ScriptedImporter:
       textureWidth: 1024
       textureHeight: 1024
       textureFormat: 2
-      bGenerateOnLoad: 1
+      bGenerateOnLoad: 0
     material: {fileID: 2100000, guid: 002b05e2fdd3e0349827c49257189d68, type: 3}
-    generatedTextures:
-    - {fileID: 2800008, guid: 002b05e2fdd3e0349827c49257189d68, type: 3}
-    - {fileID: 2800002, guid: 002b05e2fdd3e0349827c49257189d68, type: 3}
-    - {fileID: 2800010, guid: 002b05e2fdd3e0349827c49257189d68, type: 3}
-    - {fileID: 2800004, guid: 002b05e2fdd3e0349827c49257189d68, type: 3}
-    - {fileID: 2800006, guid: 002b05e2fdd3e0349827c49257189d68, type: 3}
+    generatedTextures: []

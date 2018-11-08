@@ -6,11 +6,14 @@ ScriptedImporter:
     400000: Product_plastic_base/Product_plastic_base/Transform
     2100000: 'mat.Base Plastic '
     2300000: Product_plastic_base/Product_plastic_base/MeshRenderer
-    2800002: Base Plastic _normal
-    2800004: Base Plastic _metallic
-    2800006: Base Plastic _height
-    2800008: Base Plastic _diffuse
-    2800010: Base Plastic _specular
+    2800000: Base Plastic _diffuse
+    2800002: Base Plastic _baseColor
+    2800004: Base Plastic _normal
+    2800006: Base Plastic _specular
+    2800008: Base Plastic _glossiness
+    2800010: Base Plastic _roughness
+    2800012: Base Plastic _metallic
+    2800014: Base Plastic _height
     3300000: Product_plastic_base/Product_plastic_base/MeshFilter
     11400000: sbsar
     11400002: graph0
@@ -26,30 +29,14 @@ ScriptedImporter:
   - graphLabel: 'Base Plastic '
     prototypeName: 'Base Plastic '
     graphDescIndex: 0
-    generateAllOutputs: 0
+    generateAllOutputs: 1
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://plastic_base\" label=\"\" >\n  <presetinput
       identifier=\"$outputsize\" uid=\"1481498001\" type=\"8\" value=\"10,10\" />\n
       </sbspreset>\n"
     shaderName: LightweightPipeline/Standard (Physically Based)
-    outputNames: diffuse,normal,specular,metallic,height
-    texturePackingList:
-    - outputName: diffuse
-      alphaSource: diffuse
-    - outputName: baseColor
-      alphaSource: baseColor
-    - outputName: normal
-      alphaSource: normal
-    - outputName: specular
-      alphaSource: specular
-    - outputName: glossiness
-      alphaSource: glossiness
-    - outputName: roughness
-      alphaSource: roughness
-    - outputName: metallic
-      alphaSource: metallic
-    - outputName: height
-      alphaSource: height
+    outputNames: 
+    texturePackingList: []
     textureParameters:
     - textureName: Base Plastic _glossiness
       wrapMode: 0
