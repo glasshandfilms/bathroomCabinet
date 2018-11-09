@@ -8,7 +8,19 @@ public class Controller : MonoBehaviour {
     public Transform camOrigin;
     public List<Transform> sets; 
     public List<Dropdown> dropdowns = new List<Dropdown>();
+    [SerializeField]
+    private int camRes;
     
+    public Text pathDestination;
+
+    public Text imageName;
+
+    private void Start()
+    {
+        imageName.text = GameObject.Find("Text_Filename").GetComponent<Text>().text;
+        pathDestination.text = GameObject.Find("Text_SaveDestination").GetComponent<Text>().text;
+    }
+
 
     public void QuitGame() {
         Application.Quit();
@@ -23,6 +35,21 @@ public class Controller : MonoBehaviour {
             }
             i++;
         }
+    }
+
+    public void ScreenShot()
+    {
+        StartCoroutine(CaptureScreen());
+        
+    }
+
+    public IEnumerator CaptureScreen()
+    {
+        yield return null;
+        GameObject.Find("Canvas").GetComponent<Canvas>().enabled = false;
+        yield return new WaitForEndOfFrame();
+        ScreenCapture.CaptureScreenshot(pathDestination.text + imageName.text + ".png", camRes);
+        GameObject.Find("Canvas").GetComponent<Canvas>().enabled = true;
     }
 
     private void Update() {
